@@ -5,41 +5,39 @@ import { makeStyles } from '@material-ui/core/styles';
 
 var Link = require('react-router-dom').Link
 
+
 const useStyles = makeStyles({
 
     card: {
-        borderRadius: 14,
-        width: 500,
+        width: 700, 
         height: 800,
-        border: "none",
+        borderRadius: 14,
         overflow: "hidden", 
         overflowY: "scroll",
-      },
+
+    },
 
     text: {
-        fontSize: 50
-    },
-
-    input1: {
-        width: 400,
-        height: 100,
-        marginBottom: 160
-    },
-
-    input2: {
-        marginRight: 200,
-        marginLeft: 162,
-        width: 170,
-        marginBottom: 20,
         marginTop: 30,
-    },
-
-    input3: {
-        marginBottom: 30,
+        fontSize: 50
     },
 
     button: {
         backgroundColor: "#7ca7eb", 
+        marginTop: 40,
+        marginBottom: 30
+    },
+
+    input1: {
+        marginBottom: 50,
+        width: 300,
+        marginRight: 20
+    },
+
+    input2: {
+        marginBottom: 300,
+        width: 400,
+        marginRight: 20
     },
 
     button3: {
@@ -56,11 +54,10 @@ const useStyles = makeStyles({
         top: 60,
     },
 
-})
+});
 
 
-
-export default function OutlineNPCCard(){
+export default function DevelopFantasticLocationsCard(){
     const classes = useStyles();
 
     return <>
@@ -76,34 +73,42 @@ export default function OutlineNPCCard(){
         </Link>
         <Card className={classes.card}>
             <Typography className={classes.text}>
-                Create NPC
+                Build a Location 
             </Typography>
             <Typography>
-                or 
+                or
             </Typography>
             <Button>
-                Choose Previous NPC
+                Choose a Previous Location
             </Button>
+            <br />
+            <br />
             <br /> 
-            <br />
-            <br />
             <Button className={classes.button}>
                 Upload Picture
             </Button>
-            <TextField label="name" multiline="true" className={classes.input2}/>
-            <TextField label="hometown" multiline="true" className={classes.input3}/>
-            <TextField label="description" multiline="true" className={classes.input1}/>
-            <TextField label="defining features or traits" multiline="true" className={classes.input1}/>
             <br />
-            <TextField label="their fears and desires" multiline="true" className={classes.input1}/>
+            <TextField label="name" multiline="true" className={classes.input1}/>
             <br />
-            <TextField label="something they'd say to help get into the role" multiline="true" className={classes.input1}/> 
+            <TextField label="location" multiline="true" className={classes.input1}/>
             <br />
-            <Button className={classes.button}> 
+            <TextField label="specific locations within" multiline="true" className={classes.input2}/>
+            <br />
+            <TextField label="notable people" multiline="true" className={classes.input2}/>
+            <br />
+            <TextField label="architecture" multiline="true" className={classes.input2}/>
+            <br />
+            <TextField label="landmarks" multiline="true" className={classes.input2}/>
+            <br />
+            <TextField label="backstory" multiline="true" className={classes.input2}/>
+            <br />
+            <Button className={classes.button}>
                 Submit
             </Button>
-            <br />
-            <br />
+
+
         </Card>
     </>
+
+
 }

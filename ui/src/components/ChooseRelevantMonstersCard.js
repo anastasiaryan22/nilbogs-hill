@@ -3,6 +3,8 @@ import Card from '@material-ui/core/Card';
 import { Typography, Button, TextField } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
+var Link = require('react-router-dom').Link
+
 
 const useStyles = makeStyles({
 
@@ -55,7 +57,21 @@ const useStyles = makeStyles({
         marginRight: 60,
         marginBottom: 300,
         width: 230
-    }
+    },
+
+    button3: {
+        position: 'absolute', 
+        left: 20,
+        backgroundColor: "#859e59",
+        top: 20,
+    },
+
+    button4: {
+        position: 'absolute',
+        left: 20,
+        backgroundColor: "#859e59",
+        top: 60,
+    },
 });
 
 
@@ -63,6 +79,16 @@ export default function ChooseRelevantMonstersCard(){
     const classes = useStyles();
 
     return <>
+        <Link style={{textDecoration: 'none'}} to="/ChooseCampaign">
+            <Button className={classes.button3}>
+                Return Home
+            </Button>
+        </Link>
+        <Link style={{textDecoration: 'none'}} to="/Campaigns">
+            <Button className={classes.button4}>
+                Return to Session Builder
+            </Button>
+        </Link>
         <Card className={classes.card}>
             <Typography className={classes.text}>
                 Build a Monster 

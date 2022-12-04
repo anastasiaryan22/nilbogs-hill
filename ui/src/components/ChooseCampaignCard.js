@@ -1,14 +1,9 @@
-import React, { useEffect, useState, createContext } from 'react';
+import React from 'react';
 import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
-import { Typography, Checkbox, TextField, FormControlLabel, Paper, Button } from '@material-ui/core';
+import { Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
-// var Link = require('react-router-dom').Link
-
-
-const imgCaravan = require('../card-images/caravan.jpg');
-// import imgCaravan from '../card-images/caravan.jpg'
 
 const useStyles = makeStyles({
     card: {
