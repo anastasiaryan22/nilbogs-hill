@@ -23,7 +23,8 @@ const useStyles = makeStyles({
 
     button: {
         backgroundColor: "#7ca7eb", 
-        marginBottom: 30
+        marginBottom: 30,
+        marginTop: 30
     },
 
     input1: {
@@ -96,7 +97,7 @@ export default function ChooseRelevantMonstersCard(){
             <Typography>
                 or
             </Typography>
-            <Button>
+            <Button style={{backgroundColor: "#859e59", marginTop: 20,}}>
                 Choose an Existing Monster
             </Button>
             <br />

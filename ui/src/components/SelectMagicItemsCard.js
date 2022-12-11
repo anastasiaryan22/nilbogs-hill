@@ -25,7 +25,8 @@ const useStyles = makeStyles({
 
     button: {
         backgroundColor: "#7ca7eb", 
-        marginBottom: 70
+        marginBottom: 70,
+        marginTop: 30,
     },
 
     button2: {
@@ -83,7 +84,7 @@ export default function SelectMagicItemsCard(){
             <Typography>
                 or
             </Typography>
-            <Button>
+            <Button style={{backgroundColor: "#859e59", marginTop: 20,}}>
                 Choose an Existing Item
             </Button>
             <br />

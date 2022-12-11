@@ -24,7 +24,7 @@ const useStyles = makeStyles({
 
     button: {
         backgroundColor: "#7ca7eb", 
-        marginTop: 40,
+        marginTop: 30,
         marginBottom: 30
     },
 
@@ -78,7 +78,7 @@ export default function DevelopFantasticLocationsCard(){
             <Typography>
                 or
             </Typography>
-            <Button>
+            <Button style={{backgroundColor: "#859e59", marginTop: 20,}}>
                 Choose a Previous Location
             </Button>
             <br />

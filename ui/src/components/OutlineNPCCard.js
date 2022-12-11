@@ -40,6 +40,7 @@ const useStyles = makeStyles({
 
     button: {
         backgroundColor: "#7ca7eb", 
+        marginTop: 30,
     },
 
     button3: {
@@ -81,7 +82,7 @@ export default function OutlineNPCCard(){
             <Typography>
                 or 
             </Typography>
-            <Button>
+            <Button style={{backgroundColor: "#859e59", marginTop: 20,}}>
                 Choose Previous NPC
             </Button>
             <br /> 
